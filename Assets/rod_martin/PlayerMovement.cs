@@ -14,13 +14,13 @@ namespace rod_martin
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKey(KeyCode.A))
             {
-                transform.Translate(playerProps.speed, 0, 0);
+                transform.Translate(playerProps.speed * -Time.deltaTime, 0, 0);
             }
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKey(KeyCode.D))
             {
-                transform.Translate(playerProps.speed, 0, 0);
+                transform.Translate(playerProps.speed * Time.deltaTime, 0, 0);
             }
         }
     }
