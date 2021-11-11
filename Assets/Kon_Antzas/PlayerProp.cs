@@ -2,7 +2,7 @@
 
 namespace Kon_Antzas
 {
-    [CreateAssetMenu(fileName = "PlayerProp", menuName = "Make Player Props", order = 0)]
+    [CreateAssetMenu(fileName = "PlayerPropKon", menuName = "Make Player Props Kon", order = 0)]
     public class PlayerProp : ScriptableObject
     {
         public float speed = 10f;
