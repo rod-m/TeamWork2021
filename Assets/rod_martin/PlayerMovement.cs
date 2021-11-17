@@ -27,6 +27,10 @@ namespace rod_martin
             {
                 SingletonGameManager.Instance.Score += 1;
             }
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                AudioSingleton.Instance.Volume = 0.5f;
+            }
         }
     }
 }
