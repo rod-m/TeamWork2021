@@ -2,9 +2,9 @@
 
 namespace rod_martin
 {
-    [CreateAssetMenu(fileName = "PlayerProperties", menuName = "Add Player Prop", order = 0)]
+    [CreateAssetMenu(fileName = "PlayerPropertiesRod", menuName = "Add Player Prop Rod", order = 0)]
     public class PlayerProps : ScriptableObject
     {
-        public float speed = 10f;
+        public float speed = 9f;
     }
 }
