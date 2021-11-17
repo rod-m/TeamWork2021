@@ -22,6 +22,11 @@ namespace rod_martin
             {
                 transform.Translate(playerProps.speed * Time.deltaTime, 0, 0);
             }
+
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                SingletonGameManager.Instance.Score += 1;
+            }
         }
     }
 }
