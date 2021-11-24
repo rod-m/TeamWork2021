@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace rod_martin
+namespace rod_martin.HandyTools
 {
     public class GenericSingleton<T> : MonoBehaviour where T:Component
     {
@@ -29,5 +29,30 @@ namespace rod_martin
             }
 
         }
+        
+        public virtual void Awake()
+
+        {
+
+            if (_Instance == null)
+
+            {
+
+                _Instance = this as T;
+
+                DontDestroyOnLoad(this.gameObject);
+
+            }
+
+            else
+
+            {
+
+                Destroy(gameObject);
+
+            }
+
+        }
     }
+    
 }
